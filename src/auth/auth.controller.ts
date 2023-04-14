@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Body, UseGuards } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './guards/local-auth.guard';
-import { User } from 'src/decorators/user.decorator';
-import { User as UserEntity} from 'src/user/entities/user.entity';
+import { User } from '../decorators/user.decorator';
+import { User as UserEntity} from '../user/entities/user.entity';
 import { ApiTags } from '@nestjs/swagger';
 import { Auth } from '../decorators/auth.decorator';
 import { LoginAuthDto } from './dto/login-auth.dto';
