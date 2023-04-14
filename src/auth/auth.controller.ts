@@ -1,10 +1,10 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards, Req } from '@nestjs/common';
+import { Controller, Get, Post, Body, UseGuards } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { LocalAuthGuard } from './guards/local-auth.guard';
 import { User } from 'src/decorators/user.decorator';
 import { User as UserEntity} from 'src/user/entities/user.entity';
 import { ApiTags } from '@nestjs/swagger';
-import { Auth } from 'src/decorators/auth.decorator';
+import { Auth } from '../decorators/auth.decorator';
 import { LoginAuthDto } from './dto/login-auth.dto';
 import { RegisterAuthDto } from './dto/register.auth.dto';
 

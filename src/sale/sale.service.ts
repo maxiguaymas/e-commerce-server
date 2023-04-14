@@ -4,10 +4,10 @@ import { UpdateSaleDto } from './dto/update-sale.dto';
 import { Sale } from './entities/sale.entity';
 import { Repository } from 'typeorm';
 import { InjectRepository } from '@nestjs/typeorm';
-import { User } from 'src/user/entities/user.entity';
+import { User } from '../user/entities/user.entity';
 import { SalesProductsService } from './sales-products.service';
 import { InjectRolesBuilder, RolesBuilder } from 'nest-access-control';
-import { AppResources } from 'src/app.roles';
+import { AppResources } from '../app.roles';
 
 @Injectable()
 export class SaleService {

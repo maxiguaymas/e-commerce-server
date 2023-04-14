@@ -3,9 +3,9 @@ import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { ApiTags } from '@nestjs/swagger';
-import { Auth } from 'src/decorators/auth.decorator';
-import { AppResources } from 'src/app.roles';
-import { User } from 'src/decorators/user.decorator';
+import { Auth } from '../decorators/auth.decorator';
+import { AppResources } from '../app.roles';
+import { User } from '../decorators/user.decorator';
 import { User as UserEntity } from './entities/user.entity';
 
 @ApiTags('Users')

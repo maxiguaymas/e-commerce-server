@@ -1,5 +1,5 @@
 import { hash } from "bcrypt";
-import { Sale } from "src/sale/entities/sale.entity";
+import { Sale } from "../../sale/entities/sale.entity";
 import { BeforeInsert, BeforeUpdate, Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity('users')

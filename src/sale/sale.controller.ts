@@ -1,12 +1,11 @@
 import { Controller, Get, Post, Body, Param, Delete, Put, ParseIntPipe } from '@nestjs/common';
 import { SaleService } from './sale.service';
 import { CreateSaleDto } from './dto/create-sale.dto';
-import { UpdateSaleDto } from './dto/update-sale.dto';
 import { ApiTags } from '@nestjs/swagger';
-import { Auth } from 'src/decorators/auth.decorator';
-import { User} from 'src/decorators/user.decorator';
-import { User as UserEntity} from 'src/user/entities/user.entity';
-import { AppResources } from 'src/app.roles';
+import { Auth } from '../decorators/auth.decorator';
+import { User} from '../decorators/user.decorator';
+import { User as UserEntity} from '../user/entities/user.entity';
+import { AppResources } from '../app.roles';
 
 @ApiTags('Sales')
 @Controller('sale')

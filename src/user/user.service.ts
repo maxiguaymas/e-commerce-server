@@ -5,7 +5,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { User } from './entities/user.entity';
 import { Repository } from 'typeorm';
 import { InjectRolesBuilder, RolesBuilder } from 'nest-access-control';
-import { AppResources } from 'src/app.roles';
+import { AppResources } from '../app.roles';
 
 @Injectable()
 export class UserService {

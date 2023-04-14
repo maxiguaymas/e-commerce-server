@@ -3,8 +3,8 @@ import { ProductService } from './product.service';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 import { ApiTags } from '@nestjs/swagger';
-import { Auth } from 'src/decorators/auth.decorator';
-import { AppResources } from 'src/app.roles';
+import { Auth } from '../decorators/auth.decorator';
+import { AppResources } from '../app.roles';
 
 @ApiTags('Products')
 @Controller('product')
