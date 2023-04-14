@@ -1,6 +1,6 @@
 import { IsEnum, IsNumber, IsString } from "class-validator";
 import { ProductCategory } from "../enums/product-category.enum";
-import { EnumToString } from "src/helpers/enumToString";
+import { EnumToString } from "../../helpers/enumToString";
 import { ApiProperty } from "@nestjs/swagger";
 
 export class CreateProductDto {
