@@ -21,7 +21,7 @@ import { roles } from './app.roles';
         username: configService.get<string>('DATABASE_USERNAME'),
         password: configService.get<string>('DATABASE_PASSWORD'),
         database: configService.get<string>('DATABASE_NAME'),
-        entities: [__dirname + '/../**/*.entity{.ts,.js}'],
+        entities: ['../**/*.entity.{ts,js}'],
         autoLoadEntities : true,
         synchronize: true
       })
