@@ -9,6 +9,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AuthModule } from './auth/auth.module';
 import { AccessControlModule } from 'nest-access-control';
 import { roles } from './app.roles';
+import { join } from 'path';
 
 @Module({
   imports: [
@@ -21,7 +22,7 @@ import { roles } from './app.roles';
         username: configService.get<string>('DATABASE_USERNAME'),
         password: configService.get<string>('DATABASE_PASSWORD'),
         database: configService.get<string>('DATABASE_NAME'),
-        entities: ['src/**/*.entity.{ts,js}'],
+        entities: [join(__dirname, '**', '*.entity.{ts,js}')],
         autoLoadEntities : true,
         synchronize: true
       })
